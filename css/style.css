@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    align-items: center;
+    
 }
 body{
-   
+    align-items: center;
     width: 100vw;
     height: 100vh;
     display: flex;
