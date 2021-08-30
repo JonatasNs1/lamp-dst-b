@@ -8,18 +8,30 @@ function botoesLigaDesliga(estadoLiga,estadoDesliga){
     desligar.disabled = estadoDesliga;
 }
 
+function lampadaInteira(){
+    return !lampada.src.includes("quebrada");
+}
 function ligarLampada(){
-    lampada.src ="img/ligada.jpg";
-    botoesLigaDesliga(true,false);
+    if(lampadaInteira()){
+        lampada.src ="img/ligada.jpg";
+        botoesLigaDesliga(true,false);
+    }
+ 
+   
 }
 
 function desligarLampada(){
-    lampada.src ="img/desligada.jpg";
-    botoesLigaDesliga(false,true);
+    if(lampadaInteira()){
+        lampada.src ="img/desligada.jpg";
+        botoesLigaDesliga(false,true);
+    }
+   
 }
+
 function quebrarLampada(){
    lampada.src ="img/quebrada.jpg";
    botoesLigaDesliga(true,true);
+   
 }
 
 //eventos
