@@ -20,6 +20,8 @@ function ligarLampada(){
    
 }
 
+
+
 function desligarLampada(){
     if(lampadaInteira()){
         lampada.src ="img/desligada.jpg";
